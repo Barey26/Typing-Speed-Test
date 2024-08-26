@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Test-Kecepatan-Mengetik</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="light-mode">
+	<!-- Tombol untuk Dark Modde -->
+	<div class="theme-toggle">
+		<button id="toggle-theme-btn">🌙</button>
+	</div>
+
+	<div class="container">
+		<h1>Typing Speed Test</h1>
+		<p id="text-to-type"></p>
+		<textarea id="typing-area" placeholder="Start typing here..." disabled spellcheck="false"></textarea>
+		<div class="controls">
+			<button id="start-btn">Start</button>
+			<button id="restart-btn" style="display: none;">Restart</button>
+			<span id="timer" style="display: none; margin-left: 4em">00:00</span>
+			<button id="language-btn">Switch to English</button>
+		</div>
+		<div id="result" style="display: none;">
+			<p>Words per minute (WPM): <span id="wpm">0</span></p>
+			<p>Characters typed: <span id="character">0</span></p>
+			<p>Accuracy: <span id="accuracy">0</span>%</p>
+		</div>
+	</div>
+
+ 	<script src="main.js"></script>
+</body>
+</html>

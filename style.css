@@ -1,0 +1,149 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  text-align: center;
+  margin-top: 120px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.dark-mode {
+  background-color: #333;
+  color: #f4f4f4;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.dark-mode .container {
+  background-color: #444;
+}
+
+#text-to-type {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+#typing-area {
+  width: 90%;
+  height: 100px;
+  font-size: 16px;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  resize: none;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+button {
+  padding: 10px 20px;
+  margin: 10px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+#timer {
+  margin-top: 20px;
+  font-size: 16px;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.dark-mode button {
+  background-color: #555;
+  color: white;
+}
+
+.dark-mode button:hover {
+  background-color: #444;
+}
+
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#result {
+  margin-top: 20px;
+}
+
+.theme-toggle {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+#toggle-theme-btn {
+  padding: 8px 16px;
+  font-size: 14px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.dark-mode #toggle-theme-btn {
+  padding: 8px 19.5px;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* Media quaries for responsivess*/
+@media (max-width: 768px) {
+
+  #text-to-type {
+    font-size: 16px;
+  }
+
+  #typing-area {
+    height: 80px;
+    font-size: 14px;
+  }
+
+  button {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+
+  #timer {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+
+  #text-to-type {
+    font-size: 14px;
+  }
+
+  #typing-area {
+    height: 60px;
+    font-size: 12px;
+  }
+
+  button {
+    padding: 6px 12px;
+    font-size: 12px;
+  }
+
+  #timer {
+    font-size: 12px;
+  }
+}
